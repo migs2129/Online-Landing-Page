@@ -1,99 +1,168 @@
-*{
-    box-sizing: border-box;
-}
-#homepic{
-    max-width: 100%;
+.header img{
+    width: 50vmin;
     float: left;
-    border: 3px solid white;
-    border-radius: 10px;
+    padding-right: 4%;
 }
-.wrapper{
-    margin: 150px auto;
-    max-height: 800px;
-    background-color: #BCB7AD;
-}
-body{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-#menu{
+.header p{
     font-size: 3rem;
-    display:none;
-    float: left;
+    padding-left: 2%;
 }
-#logo{
-    width: 10%;
-    height: 3%;
-    margin-left: 3%;
-    float: left;
-}
-#nav{
-    list-style-type: none;
-    margin-top: 0 ;
-    padding: 0;
-    overflow: hidden;
-    background-color: #fff;
-    font-size: 1.35rem;
-    padding-left: 5%;
-    padding-top: 2.5%;
-    color: #32261E;
-
-}
-#title{
-    float: left;
-    padding-top: 2.5%;
-    padding-left: 25%;
-    color: #32261E;
+.header p span{
     font-size: 2rem;
 }
-#nav li{
+body{
+    min-height: 100vh;
+}
+header img{
+    max-width: 50vh;
+    max-height: 15vh;
+    display: flex;
+    mix-blend-mode: multiply;
+    filter: contrast(2);
     float: left;
 }
-.navmen{
+header h1{
+    display: flex;
+    float: left;
+    margin-top: 3.5%;
+    padding-left: 20%;
+    padding-right: 10%;
+    color: #282828;
+    font-size: 3rem;
+}
+header ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #fff;
+    padding-top: 4%;
+}
+header li{
+    float:left;
+}
+
+header li a{
     display: block;
-    padding: 4% 5% 4% 5%;
+    text-align: right;
+    padding: 16px;
+    font-size: 2rem;
+    color: #282828;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
 }
-.navmen:hover{
-    background-color: #CAC5BD;
+
+header li a:hover{
+    background-color: #825735;
+    color: white;
     cursor: pointer;
+    transition: color 0.4s;
 }
-@media only screen
-and (max-width: 900px){
-    #logo{
-        height: 50%;
-        width: 20%;
+
+header button {
+    float: right;
+    height: 50px;
+    width: 50px;
+    margin-top: 20px;
+    display: none;
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+
+}
+.col{
+    flex-basis: 50%;
+    background-color: #BDA183;
+    width: max-content;
+    margin-top: auto;
+}
+.row h1{
+    color:#282828;
+    font-size: 120px;
+}
+.row p{
+    color:#282828;
+    font-size: 18px;
+    line-height: 20px;
+}
+header button .menu-toggle{
+    width: 100px;
+    height: 1000px;
+}
+.col button{
+    width: 180px;
+    color: #000;
+    font-size: 20px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media(max-width: 800px){
+    header li {
+        float: none;
     }
-    #title{
-        padding-left: 10%;
-        font-size: 1.7rem;
+    .header img{
+        width: 100%;
+        margin: 0 auto 0 auto;
+        float: none;
     }
 }
-@media only screen
-and (max-width: 600px){
-    #home{
-        background-color: #CAC5BD;
+@media (max-width: 760px){
+    header h1{
+        font-size: 2rem;
     }
-    #logo{
-        width: 15%;
-        height: 20%;
-        margin-top: -10%;
-
+    header li a{
+        font-size: 1rem;
+        padding: 10px;
+        float: none;
     }
-    #menu{
-        display:inherit;
-        margin-left: 90%;
-        margin-top: 5% ;
+    .header img{
+        width: 100%;
+        margin: 0 auto 0 auto;
+        float: none;
+        padding: 0;
     }
-    #menu:hover{
-        background-color: #BCB7AD;
+}
+@media (max-width: 764px){
+    header{
+        background-color: #825735;
     }
-    #nav{
+    .header img{
+        width: 50%;
+        margin: 0 auto 0 auto;
+        float: none;
+        padding: 5% 5% -10% 5%;
+    }
+    header button {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border: none;
+        background: transparent;
+        color: black;
+        outline: none;
+        font-size: 1.7em;
+        cursor: pointer;
+        z-index: 2;
+      }
+    
+      header i.fa-times,
+      header.opened i.fa-bars {
         display: none;
-    }
-
-    #title{
-        font-size: 1.5rem;
-        margin-top: -5%;
-        padding-left: 20%;
-        display: none;
-    }
+      }
+    
+      header.opened i.fa-times,
+      header i.fa-bars {
+        display: block;
+        animation: enter 0.8s;
+      }
+      header ul{
+        display:none;
+      }
 }
