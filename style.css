@@ -1,10 +1,19 @@
+@keyframes slide {
+    0%   {left: 1300px; top:0px;}
+    100% {left: 0px; top: 0px}
+}
 .body{
     background-color: #C9A47C;
 }
 .header{
     background-color: #E1E0DD;
     padding-bottom: 0%;
+    position: relative;
+    animation: slide;
+    animation-delay: 1s;
+    animation-duration: 3s;
 }
+
 .header img{
     width: 50vmin;
     float: left;
@@ -113,6 +122,8 @@ header button .menu-toggle{
 }
 .gallery{
     background-color: #825735;
+    justify-content: center;
+    align-items: center;
 }
 .gallery h1{
     text-align: center;
@@ -122,7 +133,7 @@ header button .menu-toggle{
 .gallery img{
     height: 30vmin;
     width: 30vmin;
-    border: 6px solid white;
+    border: 15px solid white;
     border-radius: 10px;
     justify-content: center;
     align-items: center;
@@ -135,7 +146,8 @@ header button .menu-toggle{
 
 .gallery #g1:hover, .gallery #g2:hover, .gallery #g3:hover, .gallery #g4:hover, .gallery #g5:hover, .gallery #g6:hover
 {
-    border: 6px solid #282828;
+    border: 15px solid #000;
+    transition: 0.7s;
 }
 @media(max-width: 900px){
     header{
