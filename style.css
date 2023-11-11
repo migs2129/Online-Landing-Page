@@ -1,5 +1,9 @@
+.body{
+    background-color: #C9A47C;
+}
 .header{
     background-color: #E1E0DD;
+    padding-bottom: 0%;
 }
 .header img{
     width: 50vmin;
@@ -107,6 +111,32 @@ header button .menu-toggle{
     width: 100px;
     height: 1000px;
 }
+.gallery{
+    background-color: #825735;
+}
+.gallery h1{
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+}
+.gallery img{
+    height: 30vmin;
+    width: 30vmin;
+    border: 6px solid white;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flexbox;
+    margin-left: 8%;
+    
+}.gallery #g1, .gallery #g2, .gallery #g3, .gallery #g4, .gallery #g5, .gallery #g6{
+    margin-bottom: 10%;
+}
+
+.gallery #g1:hover, .gallery #g2:hover, .gallery #g3:hover, .gallery #g4:hover, .gallery #g5:hover, .gallery #g6:hover
+{
+    border: 6px solid #282828;
+}
 @media(max-width: 900px){
     header{
         padding-bottom: 0%;
@@ -141,6 +171,9 @@ header button .menu-toggle{
     }
 }
 @media (max-width: 760px){
+    .body{
+        background-color: #d8bb9e;
+    }
     header{
         height: 5rem;
         padding: 0 0 5% 0;
@@ -165,6 +198,7 @@ header button .menu-toggle{
 @media (max-width: 764px){
     .header{
         background-color: #C9A47C;
+        padding-bottom: 0;
     }
     header h1{
         display:none;
@@ -172,9 +206,11 @@ header button .menu-toggle{
     .header p{
         text-align: center !important;
         font-size: 2rem;
+        padding-bottom: 2%;
     }
     .header p span{
         font-size: 1.2rem;
+        padding-bottom: 2%;
     }
     .header article{
         background-color: #d8bb9e;
@@ -188,6 +224,7 @@ header button .menu-toggle{
         margin: 0 auto 0 auto !important;
         float: none;
         padding: 5% 5% -20% 5%;
+        min-height: 3rem;
     }
     header button {
         display: block;
