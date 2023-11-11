@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 @keyframes slide {
     0%   {left: 1300px; top:0px;}
     100% {left: 0px; top: 0px}
@@ -13,7 +16,13 @@
     animation-delay: 1s;
     animation-duration: 3s;
 }
-
+footer{
+    text-align: center;
+    height: 30vh;
+}
+footer .container{
+    padding-top: 10%;
+}
 .header img{
     width: 50vmin;
     float: left;
@@ -129,6 +138,7 @@ header button .menu-toggle{
     text-align: center;
     color: white;
     font-size: 3rem;
+    padding-top: 2rem;
 }
 .gallery img{
     height: 30vmin;
