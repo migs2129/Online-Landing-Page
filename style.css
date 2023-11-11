@@ -5,6 +5,7 @@
     width: 50vmin;
     float: left;
     padding-right: 4%;
+    padding-top: 1%;
 }
 .header p{
     font-size: 3rem;
@@ -13,6 +14,12 @@
 }
 .header p span{
     font-size: 2rem;
+}
+.header article{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 5%;
+    background-color: #C9A47C;
 }
 body{
     min-height: 100vh;
@@ -136,7 +143,7 @@ header button .menu-toggle{
 @media (max-width: 760px){
     header{
         height: 5rem;
-        padding: 0 0 0 0;
+        padding: 0 0 5% 0;
     }
     header h1{
         font-size: 2rem;
@@ -168,6 +175,10 @@ header button .menu-toggle{
     }
     .header p span{
         font-size: 1.2rem;
+    }
+    .header article{
+        background-color: #d8bb9e;
+        font-size: 1.1rem;
     }
     footer{
         text-align: center !important;
