@@ -1,258 +1,52 @@
-.body{
-    background-color: #C9A47C;
-}
-.header{
-    background-color: #E1E0DD;
-    padding-bottom: 0%;
-}
-.header img{
-    width: 50vmin;
-    float: left;
-    padding-right: 4%;
-    padding-top: 1%;
-}
-.header p{
-    font-size: 3rem;
-    padding-left: 2%;
-    padding-bottom: 10%;
-}
-.header p span{
-    font-size: 2rem;
-}
-.header article{
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 5%;
-    background-color: #C9A47C;
-}
-body{
-    min-height: 100vh;
-}
-header{
-    padding-bottom: 1%;
-    height: 10%;
-    background-color: #fff;
-}
-header img{
-    max-width: 50vh;
-    max-height: 15vh;
-    display: flex;
-    mix-blend-mode: multiply;
-    filter: contrast(2);
-    float: left;
-    padding-top: 1.5%;
-    padding-left: 1.5%;
-}
-header h1{
-    display: flex;
-    float: left;
-    margin-top: 3.5%;
-    padding-left: 15%;
-    padding-right: 5%;
-    color: #282828;
-    font-size: 2.5rem;
-}
-header ul{
-    list-style-type: none;
-    overflow: hidden;
-    padding-top: 4%;
-}
-header li{
-    float:left;
-}
-
-header li a{
-    display: block;
-    text-align: right;
-    padding: 16px;
-    font-size: 1.5rem;
-    color: #282828;
-    text-decoration: none;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-header li a:hover{
-    background-color: #825735;
-    color: white;
-    cursor: pointer;
-    transition: color 0.4s;
-}
-
-header button {
-    float: right;
-    height: 50px;
-    width: 50px;
-    margin-top: 20px;
-    display: none;
-}
-.row{
-    display: flex;
-    height: 88%;
-    align-items: center;
-
-}
-.col{
-    flex-basis: 50%;
-    background-color: #BDA183;
-    width: max-content;
-    margin-top: auto;
-}
-.row h1{
-    color:#282828;
-    font-size: 120px;
-}
-.row p{
-    color:#282828;
-    font-size: 18px;
-    line-height: 20px;
-}
-header button .menu-toggle{
-    width: 100px;
-    height: 1000px;
-}
-.gallery{
-    background-color: #825735;
-}
-.gallery h1{
-    text-align: center;
-    color: white;
-    font-size: 3rem;
-}
-.gallery img{
-    height: 30vmin;
-    width: 30vmin;
-    border: 6px solid white;
-    border-radius: 10px;
-    justify-content: center;
-    align-items: center;
-    display: flexbox;
-    margin-left: 8%;
-    
-}.gallery #g1, .gallery #g2, .gallery #g3, .gallery #g4, .gallery #g5, .gallery #g6{
-    margin-bottom: 10%;
-}
-
-.gallery #g1:hover, .gallery #g2:hover, .gallery #g3:hover, .gallery #g4:hover, .gallery #g5:hover, .gallery #g6:hover
-{
-    border: 6px solid #282828;
-}
-@media(max-width: 900px){
-    header{
-        padding-bottom: 0%;
-    }
-    header li a{
-        float: none;
-        font-size: 1.5rem;
-        padding: 0.5rem;
-    }
-    .header img{
-        margin: 0 auto 0 auto !important;
-        width: 50%;
-        justify-content: center;
-    }
-}
-
-@media(max-width: 800px){
-    header{
-        padding-bottom: 0%;
-    }
-    header li a{
-        float: none;
-        font-size: 1.5rem;
-        padding: 0.5rem;
-    }
-    .header img{
-        width: 100%;
-        margin: 0 auto 0 auto !important;
-        float: none;
-        padding: 5% 0 0 0;
-    
-    }
-}
-@media (max-width: 760px){
-    .body{
-        background-color: #d8bb9e;
-    }
-    header{
-        height: 5rem;
-        padding: 0 0 5% 0;
-    }
-    header h1{
-        font-size: 2rem;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mara Lands</title>
+    <link rel="icon" type="image/x-icon" href="Mara fav.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+    <header>    
+        <img src="Mara Lands.png">
+        <h1>Mara Lands</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+        <button class="menu-toggle" class="w3-xlarge">
+            <i class="fa fa-bars"></i>
+            <i class="fa fa-times"></i>
+        </button>
+        </header>
+    <div class="body">  
+        <div class="header" id="">
+            <p><img src="homepic (2).jpg" style="width:50vh;height:40vh;margin-right:15px;"><br><br>A World Class Real Estate Organization<br><span>Estates you've never seen before!</span></p>
+            <article>Mara Lands is a premier real estate development company that offers a wide range of properties to meet the needs of all types of buyers. Whether you're looking for a starter home, a family home, or an investment property, Mara Lands has something to offer you.</article>
+        </div>
+        <section id="gallery" class="gallery">
+            <h1>Gallery</h1>
+            <img src="headpic.jpg" id="g1">
+            <img src="homepic.jpg" id="g2">
+            <img src="house1.jpg" id="g3">
+            <img src="house2.jpg" id="g4">
+            <img src="house3.jpg" id="g5">
+            <img src="house4.jpg" id="g6">
+        </section>
         
-    }
-    header li a{
-        font-size: 1rem;
-        padding: 10px;
-        float: none;
-    }
-    .header img{
-        width: 100%;
-        margin: 0 auto 0 auto !important;
-        float: none;
-        padding: 0;
-        padding-top: 5%
-    }
-}
-@media (max-width: 764px){
-    .header{
-        background-color: #C9A47C;
-        padding-bottom: 0;
-    }
-    header h1{
-        display:none;
-    }
-    .header p{
-        text-align: center !important;
-        font-size: 2rem;
-        padding-bottom: 2%;
-    }
-    .header p span{
-        font-size: 1.2rem;
-        padding-bottom: 2%;
-    }
-    .header article{
-        background-color: #d8bb9e;
-        font-size: 1.1rem;
-    }
-    footer{
-        text-align: center !important;
-    }
-    .header img{
-        width: 50%;
-        margin: 0 auto 0 auto !important;
-        float: none;
-        padding: 5% 5% -20% 5%;
-        min-height: 3rem;
-    }
-    header button {
-        display: block;
-        width: 40px;
-        height: 40px;
-        border: none;
-        background: transparent;
-        color: black;
-        outline: none;
-        font-size: 1.7em;
-        cursor: pointer;
-        z-index: 2;
-        position: fixed;
-        float: right;
-        padding-left: 90%;
-      }
-    
-      header i.fa-times,
-      header.opened i.fa-bars {
-        display: none;
-      }
-    
-      header.opened i.fa-times,
-      header i.fa-bars {
-        display: block;
-        animation: enter 0.8s;
-      }
-      header ul{
-        display:none;
-      }
-}
+    <footer>
+        <div class="container">
+            <p>Copyright &copy; 2023 Mara Lands. All rights reserved.</p>
+        </div>
+    </footer>
+    </div>
+        
+    <script src="script.js"></script>
+</body>
+</html>
+
+
